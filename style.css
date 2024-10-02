@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f9;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.day-container {
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="time"], input[type="number"] {
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#wage-container {
+    margin-top: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#calculateBtn {
+    background-color: #28a745;
+}
+
+#resetBtn {
+    background-color: #dc3545;
+}
+
+#calculateBtn:hover {
+    background-color: #218838;
+}
+
+#resetBtn:hover {
+    background-color: #c82333;
+}
+
+#results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+input[type="time"] {
+    width: calc(50% - 10px); /* 使输入框占据50%的宽度，减去一些边距 */
+    margin: 5px; /* 添加间距 */
+}
+
+.day-container div {
+    display: flex; /* 使用 Flexbox 布局 */
+    justify-content: space-between; /* 在行内均匀分布 */
+    align-items: center; /* 垂直居中对齐 */
+}
+
+@media screen and (max-width: 600px) {
+    input[type="time"] {
+        width: 100%; /* 在小屏幕上占据全宽 */
+    }
+
+    .day-container div {
+        flex-direction: column; /* 在小屏幕上改为垂直布局 */
+        align-items: flex-start; /* 左对齐 */
+    }
+}
+
+
+/* 圓形LOGO样式 */
+.logo-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>店長加油</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    
+    <h1>班卡計算器</h1>
+    
+
+    <!-- 圓形LOGO -->
+<div class="logo-container">
+    <img src="logo.jpg" alt="Logo" class="logo">
+</div>
+
+    <p>工作時間（可多次新增）：</p>
+    <p>宥任製作</p>
+
+    <!-- 星期一到星期五 -->
+    <div class="day-container" id="monday">
+        <h3>星期一</h3>
+        <button onclick="addTimeSlot('monday')">新增</button>
+        <div id="timeSlots_monday"></div>
+    </div>
+
+    <div class="day-container" id="tuesday">
+        <h3>星期二</h3>
+        <button onclick="addTimeSlot('tuesday')">新增</button>
+        <div id="timeSlots_tuesday"></div>
+    </div>
+
+    <div class="day-container" id="wednesday">
+        <h3>星期三</h3>
+        <button onclick="addTimeSlot('wednesday')">新增</button>
+        <div id="timeSlots_wednesday"></div>
+    </div>
+
+    <div class="day-container" id="thursday">
+        <h3>星期四</h3>
+        <button onclick="addTimeSlot('thursday')">新增</button>
+        <div id="timeSlots_thursday"></div>
+    </div>
+
+    <div class="day-container" id="friday">
+        <h3>星期五</h3>
+        <button onclick="addTimeSlot('friday')">新增</button>
+        <div id="timeSlots_friday"></div>
+    </div>
+
+    <!-- 時薪輸入 -->
+    <div class="wage-container">
+        <label for="hourlyWage">時薪：</label>
+        <input type="number" id="hourlyWage" placeholder="輸入時薪 越高越好">
+    </div>
+
+    <!-- 計算與重設按鈕 -->
+    <div class="buttons">
+        <button id="calculateBtn" onclick="calculateAll()">計算</button>
+        <button id="resetBtn" onclick="resetAll()">重設</button>
+    </div>
+
+    <!-- 總結果 -->
+    <div id="results">
+        <h2>總結果</h2>
+        <div id="total_monday_result">星期一：<span></span></div>
+        <div id="total_tuesday_result">星期二：<span></span></div>
+        <div id="total_wednesday_result">星期三：<span></span></div>
+        <div id="total_thursday_result">星期四：<span></span></div>
+        <div id="total_friday_result">星期五：<span></span></div>
+
+        <div id="total_hours">總工時：<span></span></div>
+        <div id="total_salary">總薪水：<span></span></div>
+    </div>
+    <p> </p>
+    <div class="logo-container">
+        <img src="logo.jpg" alt="Logo" class="logo">
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
